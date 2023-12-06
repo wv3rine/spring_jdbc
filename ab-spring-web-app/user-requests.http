@@ -1,0 +1,21 @@
+GET localhost:8080/users
+
+###
+POST localhost:8080/users
+Content-Type: application/json
+
+{
+  "login": "peergynt",
+  "password": "12345"
+}
+
+###
+PUT localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "Roman Hludov"
+}
+
+###
+GET http://localhost:8080/users?pageSize=20&page=0
